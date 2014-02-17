@@ -27,6 +27,10 @@
 //  THE SOFTWARE.
 //
 
+#if !__has_feature(objc_arc)
+    #error This library requires automatic reference counting
+#endif
+
 #import "UIView.h"
 #import <QuartzCore/QuartzCore.h>
 #import <CoreGraphics/CoreGraphics.h>

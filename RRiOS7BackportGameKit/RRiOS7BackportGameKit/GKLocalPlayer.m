@@ -27,6 +27,10 @@
 //  THE SOFTWARE.
 //
 
+#if !__has_feature(objc_arc)
+    #error This library requires automatic reference counting
+#endif
+
 #import "GKLocalPlayer.h"
 #import <objc/runtime.h>
 

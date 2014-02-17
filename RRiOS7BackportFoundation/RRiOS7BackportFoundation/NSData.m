@@ -28,6 +28,10 @@
 //  3. This notice may not be removed or altered from any source distribution.
 //
 
+#if !__has_feature(objc_arc)
+    #error This library requires automatic reference counting
+#endif
+
 #import "NSData.h"
 #import <CommonCrypto/CommonCryptor.h>
 
